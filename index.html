@@ -468,37 +468,22 @@ h2 {
   letter-spacing: 0.3px;
 }
 
-/* ── SUPPORT / GOFUNDME ── */
-#support { background: var(--dark); }
-.support-label {
-  display: inline-block;
-  font-size: 13px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  color: var(--aqua-dim);
-  border: 1px solid var(--aqua-border);
-  padding: 4px 10px;
-  margin-bottom: 16px;
-}
-.support-title {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(24px, 3.4vw, 34px);
-  font-weight: 300;
-  color: var(--white);
-  margin-bottom: 10px;
-}
-.support-desc {
-  font-size: 14px;
-  line-height: 1.7;
-  color: #aaa;
-  max-width: 560px;
-  margin-bottom: 32px;
-}
-.support-embed-wrap {
-  display: flex;
-  justify-content: center;
-}
+/* Ko-Fi goal container */
+  .kofi-goal-container {
+   width: 100%;
+   max-width: 600px; /* Limits width so it doesn't stretch too wide on desktop */
+   margin: 20px auto; /* Centers the container horizontally */
+   text-align: center;
+  }
 
+.kofi-goal-container iframe {
+   width: 100%;
+   height: 120px; /* Adjust if the bar or text looks slightly clipped */
+   border: none;
+   background: transparent;
+   overflow: hidden;
+}
+  
 /* ── FOOTER ── */
 footer {
   padding: 28px 20px;
@@ -711,8 +696,15 @@ referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
 <p class="support-title">Help Fund the Next Soundtrack</p>
 <p class="support-desc">Every score starts with studio time, sample libraries, and hours at the desk. If you'd like to help fund the next game soundtrack, you can contribute directly below.</p>
 <div class="support-embed-wrap">
-<div class="gfm-embed" data-url="https://www.gofundme.com/f/donate-to-help-me-make-a-game-soundtrack/widget/medium?attribution_id=sl%3A46c953b6-55d1-408a-ae36-ef7c177cef33"></div>
-<script src="https://www.gofundme.com/static/js/embed.js"></script>
+<!-- KO-FI PROGRESS BAR EMBED START -->
+<iframe 
+    src="https://ko-fi.com" 
+    width="100%" 
+    height="120" 
+    style="border:none; background:transparent; overflow:hidden;" 
+    scrolling="no">
+</iframe>
+<!-- KO-FI PROGRESS BAR EMBED END -->
 </div>
 </div>
 </section>
