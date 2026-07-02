@@ -468,22 +468,6 @@ h2 {
   letter-spacing: 0.3px;
 }
 
-/* Ko-Fi goal container */
-  .kofi-goal-container {
-   width: 100%;
-   max-width: 600px; /* Limits width so it doesn't stretch too wide on desktop */
-   margin: 20px auto; /* Centers the container horizontally */
-   text-align: center;
-  }
-
-.kofi-goal-container iframe {
-   width: 100%;
-   height: 120px; /* Adjust if the bar or text looks slightly clipped */
-   border: none;
-   background: transparent;
-   overflow: hidden;
-}
-  
 /* ── FOOTER ── */
 footer {
   padding: 28px 20px;
@@ -695,19 +679,20 @@ referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
 <span class="support-label">Support The Work</span>
 <p class="support-title">Help Fund the Next Soundtrack</p>
 <p class="support-desc">Every score starts with studio time, sample libraries, and hours at the desk. If you'd like to help fund the next game soundtrack, you can contribute directly below.</p>
-<div class="support-embed-wrap" style="background: transparent;">
-<!-- FIXED KO-FI PROGRESS BAR EMBED -->
+<div class="support-embed-wrap">
+<!-- OFFICIAL KO-FI EMBED START -->
 <iframe 
-    src="https://ko-fi.com" 
-    width="100%" 
-    height="120" 
-    style="border:none; background:transparent; background-color:transparent; overflow:hidden;" 
-    allowtransparency="true"
-    scrolling="no">
+    id="kofiframe" 
+    src="https://ko-fi.com/keonwu/?hidefeed=true&widget=true&embed=true&preview=true" 
+    style="border:none; width:100%; padding:4px; background:transparent;" 
+    height="712" 
+    title="keonwu">
 </iframe>
+<!-- OFFICIAL KO-FI EMBED END -->
 </div>
 </div>
 </section>
+
 
 
 <section id="about">
