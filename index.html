@@ -468,6 +468,37 @@ h2 {
   letter-spacing: 0.3px;
 }
 
+/* ── SUPPORT / GOFUNDME ── */
+#support { background: var(--dark); }
+.support-label {
+  display: inline-block;
+  font-size: 13px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--aqua-dim);
+  border: 1px solid var(--aqua-border);
+  padding: 4px 10px;
+  margin-bottom: 16px;
+}
+.support-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(24px, 3.4vw, 34px);
+  font-weight: 300;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+.support-desc {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #aaa;
+  max-width: 560px;
+  margin-bottom: 32px;
+}
+.support-embed-wrap {
+  display: flex;
+  justify-content: center;
+}
+
 /* ── FOOTER ── */
 footer {
   padding: 28px 20px;
@@ -680,20 +711,11 @@ referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
 <p class="support-title">Help Fund the Next Soundtrack</p>
 <p class="support-desc">Every score starts with studio time, sample libraries, and hours at the desk. If you'd like to help fund the next game soundtrack, you can contribute directly below.</p>
 <div class="support-embed-wrap">
-<!-- OFFICIAL KO-FI EMBED START -->
-<iframe 
-    id="kofiframe" 
-    src="https://ko-fi.com/keonwu/?hidefeed=true&widget=true&embed=true&preview=true" 
-    style="border:none; width:100%; padding:4px; background:transparent;" 
-    height="712" 
-    title="keonwu">
-</iframe>
-<!-- OFFICIAL KO-FI EMBED END -->
+<div class="gfm-embed" data-url="https://www.gofundme.com/f/donate-to-help-me-make-a-game-soundtrack/widget/medium?attribution_id=sl%3A46c953b6-55d1-408a-ae36-ef7c177cef33"></div>
+<script src="https://www.gofundme.com/static/js/embed.js"></script>
 </div>
 </div>
 </section>
-
-
 
 <section id="about">
 <div class="section-content">
