@@ -266,8 +266,26 @@ background: var(--aqua-dim);
 
 /* ── CURRENT PROJECT ── */
 #current-project {
-background: var(--black);
+--aqua: #4ea8ff;
+--aqua-dim: #2f7dcc;
+--aqua-faint: rgba(78,168,255,0.08);
+--aqua-border: rgba(78,168,255,0.35);
+position: relative;
+background-image: url("Space.png");
+background-size: cover;
+background-position: center;
 text-align: center;
+overflow: hidden;
+}
+#current-project::before {
+content: '';
+position: absolute;
+inset: 0;
+background: linear-gradient(to bottom, rgba(0,10,25,0.45) 0%, rgba(0,10,25,0.65) 55%, rgba(0,6,18,0.92) 100%);
+}
+#current-project .section-content {
+position: relative;
+z-index: 1;
 }
 #current-project h2 { margin-bottom: 16px; }
 .current-project-desc {
@@ -586,6 +604,15 @@ h1 { font-size: clamp(38px, 12vw, 60px); }
 <div class="scroll-hint">Listen</div>
 </header>
 
+<section id="current-project">
+<div class="section-content">
+<p class="section-label">In Progress</p>
+<h2>Current Project</h2>
+<p class="current-project-desc">Currently scoring the original soundtrack for <strong>Lux Novus</strong>, an indie sci-fi action-adventure game. Head over to the showcase site to hear it as it comes together.</p>
+<a class="current-project-link" href="https://luxnovus.rogueindustries.au" target="_blank" rel="noopener">Check Out The Current Project →</a>
+</div>
+</section>
+
 <section id="tracks">
 <div class="section-content">
 <p class="section-label">Selected Works</p>
@@ -667,15 +694,6 @@ h1 { font-size: clamp(38px, 12vw, 60px); }
 <iframe src="https://open.spotify.com/embed/track/45lGmwkzNqwRPCydY5bkqB?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Spotify track player"></iframe>
 </div>
 
-</div>
-</section>
-
-<section id="current-project">
-<div class="section-content">
-<p class="section-label">In Progress</p>
-<h2>Current Project</h2>
-<p class="current-project-desc">Currently scoring the original soundtrack for <strong>Lux Novus</strong>, an indie sci-fi action-adventure game. Head over to the showcase site to hear it as it comes together.</p>
-<a class="current-project-link" href="https://luxnovus.rogueindustries.au" target="_blank" rel="noopener">Check Out The Current Project →</a>
 </div>
 </section>
 
